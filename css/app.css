@@ -24,20 +24,19 @@ body::-webkit-scrollbar {
 }
 
 .img-crop {
-    width: 14rem;
-    height: 12rem;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
+    width: 200px; /* Lebar gambar */
+    height: 200px; /* Tinggi gambar */
+    overflow: hidden; /* Mengatur overflow */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
 }
 
-.img-crop>img {
-    display: inline;
-    margin: 0 auto;
-    height: auto;
-    width: 100%;
-    height: 100%;
+.img-crop img {
+    width: 100%; /* Membuat gambar memenuhi lebar kotak gambar */
+    height: 100%; /* Membuat gambar memenuhi tinggi kotak gambar */
+    display: block; /* Membuat gambar menjadi blok */
+    object-fit: cover; /* Menjaga proporsi gambar */
 }
+
 
 .btn-music {
     position: fixed;
